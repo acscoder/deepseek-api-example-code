@@ -1,0 +1,9 @@
+[package]
+name = "deepseek-api-example-code"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+deepseek-api-client = "0.1.0"
+tokio = { version = "1", features = ["full"] }
+futures-util = "0.3.28"
