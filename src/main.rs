@@ -2,7 +2,7 @@ use deepseek_api_client::*;
 use futures_util::StreamExt;
 use tokio::runtime::Runtime;
 
-static DEEPSEEK_API_KEY:&str = "sk-94877a97d27d402fa0e528917dcd05bd";
+static DEEPSEEK_API_KEY:&str = "sk-....................";
 #[tokio::main]
 async fn main()-> Result<(), Box<dyn std::error::Error>> {
     //call API in async function
