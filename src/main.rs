@@ -1,7 +1,7 @@
 use deepseek_api_client::*;
 use futures_util::StreamExt;
 use tokio::runtime::Runtime;
-use std::env;
+use std::io::{self, Write};
 
 use lazy_static::lazy_static;
 lazy_static! {
@@ -24,7 +24,6 @@ async fn main()-> Result<(), Box<dyn std::error::Error>> {
         let res = llm(messages.clone()).await?;
         let res_text = get_response_text(&res, 0);
         println!("{:?}",res_text);
-
     
     //call API in Stream
     let mut stream_llm = chat_completion_stream(&DEEPSEEK_API_KEY);        
@@ -39,10 +38,12 @@ async fn main()-> Result<(), Box<dyn std::error::Error>> {
         };
         let data = string_to_ChatResponses(s);
         let res = get_response_text(&data, 0).unwrap_or("".to_owned());
-        println!("{}", res);
+
+        print!("{}", res);
+        
     }
-    
-    
+     
+
     Ok(())    
 }
 
