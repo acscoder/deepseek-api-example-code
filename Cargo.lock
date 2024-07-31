@@ -110,9 +110,9 @@ checksum = "06ea2b9bc92be3c2baa9334a323ebca2d6f074ff852cd1d7b11064035cd3868f"
 
 [[package]]
 name = "deepseek-api-client"
-version = "0.1.0"
+version = "0.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db872811fe1f5c863751093f3e0eda2f96ef282cde98e42f43b09322eea947b7"
+checksum = "ec760d143d949129085d709c764f67202861c1b1d133358f2eda2642c4d3ee1f"
 dependencies = [
  "anyhow",
  "optional-default",
