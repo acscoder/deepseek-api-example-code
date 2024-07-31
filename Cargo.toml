@@ -7,3 +7,4 @@ edition = "2021"
 deepseek-api-client = "0.1.1"
 tokio = { version = "1", features = ["full"] }
 futures-util = "0.3.28"
+lazy_static = "1.5.0"
